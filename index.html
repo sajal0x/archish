@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archish Mondal | My Digital World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFD93D; /* Sunny Yellow */
+            --secondary: #6EB9F7; /* Sky Blue */
+            --accent: #FF8066; /* Coral */
+            --bg: #F0F9FF;
+            --text: #333;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 { font-family: 'Fredoka One', cursive; color: var(--secondary); }
+
+        /* Header & Nav */
+        header {
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        nav {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: var(--primary);
+            color: #444;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        nav a:hover { transform: scale(1.1); background: var(--secondary); color: white; }
+
+        /* Sections */
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        section { margin-bottom: 50px; padding: 20px; background: white; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            background: #eee;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--bg);
+        }
+
+        /* Diary/Blog Cards */
+        .card {
+            border-left: 5px solid var(--accent);
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #fff9f8;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #888; }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Archish Mondal 🌟</h1>
+    <p>Welcome to my little corner of the internet!</p>
+    <nav>
+        <a href="#gallery">📸 Gallery</a>
+        <a href="#diary">✍️ Diary</a>
+        <a href="#philosophy">💭 Philosophy</a>
+        <a href="#learning">📚 Learning</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section id="gallery">
+        <h2>📸 Photo Gallery</h2>
+        <p>Capturing the best moments of my childhood.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://archish.mondal.live/c/archishbday.jpg" alt="First Barthday" width="200" height="200"></div>
+            <div class="gallery-item"><img src="https://archish.mondal.live/c/archish.jpeg" alt="Archish Mondal" width="200" height="200"></div>
+            <div class="gallery-item"><img src="https://archish.mondal.live/c/archish-cactus.png" alt="Archish with Cactus" width="200" height="200"></div>
+            <div class="gallery-item"><embed type="video/webm" src="https://archish.mondal.live/c/archish-eagle.mp4" width="200" height="200"></div>
+        </div>
+    </section>
+
+    <section id="diary">
+        <h2>✍️ Daily Diary</h2>
+        <div class="card">
+            <span class="tag">Dec 17, 2025</span>
+            <h3>A Day at the Park</h3>
+            <p>Today I learned how to swing really high! I saw a ladybug on a leaf.</p>
+        </div>
+    </section>
+
+    <section id="philosophy">
+        <h2>💭 Archish's Philosophy</h2>
+        <blockquote>
+            "The world is a giant playground, and every day is a new game."
+        </blockquote>
+        <p>Archish believes in curiosity, kindness to animals, and that dessert should always come first.</p>
+    </section>
+
+    <section id="learning">
+        <h2>📚 Learning Journey</h2>
+        <p>Tracking my progress as I explore the world!</p>
+        <ul>
+            <li>🎨 Currently Learning: Watercolors</li>
+            <li>🔢 Math Milestone: Counting to 100</li>
+            <li>🌍 Science: Exploring the Solar System</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Archish Mondal | archish.mondal.live</p>
+</footer>
+
+</body>
+</html>

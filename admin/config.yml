@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # or master
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "diary"
+    label: "Daily Diary"
+    folder: "_diary" # Where the diary entries will be stored
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
